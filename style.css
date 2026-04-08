@@ -17,6 +17,40 @@ h1 {
   color: #222;
 }
 
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 220px;
+  flex: 1;
+}
+
+.control-group label {
+  font-weight: bold;
+}
+
+.control-group input,
+.control-group select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+}
+
+.results-count {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
 .episode-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -51,7 +85,7 @@ h1 {
   color: #222;
 }
 
-#root > p {
+.source-text {
   margin-top: 24px;
   text-align: center;
 }
